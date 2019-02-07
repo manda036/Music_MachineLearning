@@ -7,4 +7,4 @@ Step one: In your terminal create a new python virtual environment for us to use
 
 Step two: Activate the environment in order to download our necessary libraries. "source activate Spotify"
 
-Step three: Download the following libraries using "pip install": gunicorn, pyscopg2, flask, pandas. I will update this list if any other libraries are needed for the project.
+Step three: Download the following libraries using "pip install": gunicorn, pyscopg2, flask, pandas, spotipy. I will update this list if any other libraries are needed for the project.
