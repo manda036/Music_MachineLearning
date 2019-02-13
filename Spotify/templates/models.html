@@ -75,11 +75,28 @@
                         This model could potentially be good for mood playlist predicting.
                     </p>
                     <br>
+                    <h2>Model #2: OneClass SVM</h2>
+                    <br>
+                    <p>Similar to the previous model, we used Pandas to pull playlist and song information for Zoe,
+                        Kelly, and Mamta. We then used the SciKitLean library to use the OneClassSVM algorithm to create
+                        three separate models for Zoe, Kelly, and Mamta. The purpose of this was to see if we tested a
+                        different playlist, we should be able to predict if any of the three of us would enjoy listening
+                        to it. We did run into an issue where we needed many more songs for each of us to test on
+                        because of now it seems to identify all songs outside of those in our dataframes as outliers.
+                        This model could potentially be good for mood playlist predicting.
+                    </p>
+                    <br>
+                    <br>
+                    <h2>Model #3: Random Forest</h2>
+                    <br>
+                    <a href="decisiontree.html" target="_blank">
+                        <img src="{{ url_for('static', filename='images/randomforest.png') }}" alt="randomforest" id="randomforest" width="891" height="368"
+                            class="center" ;></a>
+                    <br>
                     <h2>Selected Model:</h2>
                     <br>
-                    <p>For the above reasons, we chose to pursue the Tree Decision model in the hopes of predicting
+                    <p>For the above reasons, we chose to pursue the Random Forest model in the hopes of predicting
                         Spotify users' musical interest.</p>
-
                 </div>
             </div>
         </div>
