@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>TormentorOptical</title>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+
+<body>
+    <!--Our NavBar-->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html" id="navbar"><b>TORMENTOR OPTICAL</b></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Charting Musical Taste
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="zoe.html">Zoe's Metrics</a>
+                            <a class="dropdown-item" href="kelly.html">Kelly's Metrics</a>
+                            <a class="dropdown-item" href="mamta.html">Mamta's Metrics</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="models.html">Models</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="predictive.html">Results</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+    <!--Our Body-->
+    <div class="container-background">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <br>
+                    <h1><b>Music Taste and Machine Learning</b></h1>
+                    <hr>
+                    <h2>Background:</h2>
+                    <p>Spotify is a music and podcast streaming platform founded in 2006. It is one of the most popular
+                        streaming services in the world. As of the final quarter of 2018, Spotify had 96 million
+                        premium subscribers worldwide.* An essential ingredient in Spotify's success is the 'recommended
+                        music' functionality. Every Monday, Spotify provides its premium users with a playlist of
+                        recommended songs, based on an individual's listening habits.</p><br>
+                    <img src="{{ url_for('static', filename='images/spotifygrowth.png') }}" alt="energy" id="energy" width="750" height="575" class="center"
+                        ;>
+                    <br>
+                    <h2>Research Objective:</h2>
+                    <p>Simulate Spotify's 'recommended music' functionality with machine learning to
+                        predict whether or not a Spotify user will like a playlist, as determined by their listening
+                        habits.</p>
+                    <h2>Methods:</h2>
+                    <p>We will pull listener data from three Spotify listeners' "Top Songs 2018" playlists. Data is
+                        broken down
+                        with Spotify's "Sort Your
+                        Music" functionality. Sort Your Music provides a data frame for determining music taste with
+                        several metrics:</p>
+                    <ul>
+                        <li>Tempo: Measured in beats per minute.</li>
+                        <li>Energy: The energy of a song - the higher the value, the more energetic.</li>
+                        <li>Loudness: The higher the value, the louder the song.</li>
+                        <li>Valence: The higher the value, the more positive mood for the song.</li>
+                    </ul>
+                    <h2>Workflow:</h2>
+                    <ol>
+                        <li>Scrape data from Spotify's "Global Top 50" playlist and three users' "Your Top Songs 2018"
+                            playlist using "Sort Your Music" and Spotipy, a lightweight Python library for the Spotify
+                            Web API.</li>
+                        <li>Import and clean data in a dataframe using Pandas; visualize initial charts with MatPlotLib.</li>
+                        <li>Identify the user's optimal song type using "Sort Your Music" data aggregation system.</li>
+                        <li>Develop two predictive models with ScitKitLearn to run an analysis
+                            identifying whether or not a user will like a playlist.
+                        </li>
+                        <li>Visualize results with D3.</li>
+                    </ol>
+                    <hr>
+                    <p>*Source: Statista</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid" id="footer"></footer>
+
+    <!-- Our JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

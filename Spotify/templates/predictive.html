@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>TormentorOptical</title>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+</head>
+
+<body>
+    <!--Our NavBar-->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html" id="navbar"><b>TORMENTOR OPTICAL</b></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Charting Musical Taste
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="zoe.html">Zoe's Metrics</a>
+                            <a class="dropdown-item" href="kelly.html">Kelly's Metrics</a>
+                            <a class="dropdown-item" href="mamta.html">Mamta's Metrics</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="models.html">Models</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="predictive.html">Results</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+    <!--Our Body-->
+    <div class="container-background">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4"><br><b>
+                        <h3>Global Top 50</h3>
+                    </b><br>
+                    <iframe src="https://open.spotify.com/embed/user/spotifycharts/playlist/37i9dQZEVXbMDoHDwVN2tF"
+                        width="300" height="700" frameborder="0" allowtransparency="true"
+                        allow="encrypted-media"></iframe>
+                </div>
+                <div class="col-sm-8"><br><b>
+                        <h3>Results</h3>
+                    </b><br>
+                    <style type="text/css">
+                        .tg {
+                            border-collapse: collapse;
+                            border-spacing: 0;
+                            border-color: #999;
+                        }
+
+                        .tg td {
+                            font-family: Arial, sans-serif;
+                            font-size: 14px;
+                            padding: 10px 10px;
+                            border-style: solid;
+                            border-width: 1px;
+                            overflow: hidden;
+                            word-break: normal;
+                            border-color: #999;
+                            color: #444;
+                            background-color: #F7FDFA;
+                        }
+
+                        .tg th {
+                            font-family: Arial, sans-serif;
+                            font-size: 14px;
+                            font-weight: normal;
+                            padding: 10px 10px;
+                            border-style: solid;
+                            border-width: 1px;
+                            overflow: hidden;
+                            word-break: normal;
+                            border-color: #999;
+                            color: #fff;
+                            background-color: #26ADE4;
+                        }
+
+                        .tg .tg-camx {
+                            font-family: Arial, Helvetica, sans-serif !important;
+                            ;
+                            background-color: #efefef;
+                            color: #000000;
+                            border-color: #000000;
+                            text-align: center;
+                            vertical-align: top
+                        }
+
+                        .tg .tg-wpis {
+                            font-weight: bold;
+                            font-size: 18px;
+                            font-family: Arial, Helvetica, sans-serif !important;
+                            ;
+                            background-color: #343434;
+                            border-color: inherit;
+                            text-align: left;
+                            vertical-align: top
+                        }
+
+                        .tg .tg-i0h3 {
+                            font-weight: bold;
+                            font-size: 18px;
+                            font-family: Arial, Helvetica, sans-serif !important;
+                            ;
+                            background-color: #343434;
+                            text-align: left;
+                            vertical-align: top
+                        }
+
+                        .tg .tg-2hax {
+                            font-family: Arial, Helvetica, sans-serif !important;
+                            ;
+                            background-color: #efefef;
+                            color: #000000;
+                            border-color: #000000;
+                            text-align: left;
+                            vertical-align: top
+                        }
+                    </style>
+                    <table class="tg">
+                        <tr>
+                            <th class="tg-wpis">Playlist</th>
+                            <th class="tg-i0h3">Energy</th>
+                            <th class="tg-i0h3">Loudness</th>
+                            <th class="tg-i0h3">Tempo (BPM)</th>
+                            <th class="tg-i0h3">Valence/Positivity</th>
+                        </tr>
+                        <tr>
+                            <td class="tg-2hax">Zoe's Top Songs 2018</td>
+                            <td class="tg-camx">0.56</td>
+                            <td class="tg-camx">-9.01</td>
+                            <td class="tg-camx">119.24</td>
+                            <td class="tg-camx">0.50</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-2hax">Kelly's Top Songs 2018</td>
+                            <td class="tg-camx">0.67</td>
+                            <td class="tg-camx">-6.84</td>
+                            <td class="tg-camx">117.85</td>
+                            <td class="tg-camx">0.45</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-2hax">Mamta's Top Songs 2018</td>
+                            <td class="tg-camx">0.67</td>
+                            <td class="tg-camx">-6.00</td>
+                            <td class="tg-camx">120.92</td>
+                            <td class="tg-camx">0.52</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-2hax">Global Top 50</td>
+                            <td class="tg-camx">0.59</td>
+                            <td class="tg-camx">-6.61</td>
+                            <td class="tg-camx">119.89</td>
+                            <td class="tg-camx">0.45</td>
+                        </tr>
+                    </table>
+                    <br><br>
+                    <div style="width: 90%;">
+                        <canvas id="graphTwo" height="100" width="200"></canvas>
+                    </div>
+                    <button id="toggleScale">Music Metrics</button>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-sm-12">
+                    <hr>
+                    <h2>Conclusion:</h2>
+                    <p>At this time, we don't have access to enough data points to be able to determine recommended
+                        music for a Spotify user with machine learning. We had limited access to Spotify data via their
+                        API, thus narrowing
+                        the machine learning capabilities.</p>
+                    <p>We can infer from our plots, however, that the data suggest "" is most likely to enjoy the
+                        "Global Top 50" playlist, as determined by similar metrics. </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid" id="footer"></footer>
+
+    <!-- Our JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="../static/js/tentative_graph.js"></script>
+</body>
+
+</html>

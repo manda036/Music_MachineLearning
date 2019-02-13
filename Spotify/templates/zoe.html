@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>TormentorOptical</title>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+
+<body>
+    <!--Our NavBar-->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html" id="navbar"><b>TORMENTOR OPTICAL</b></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Charting Musical Taste
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="zoe.html">Zoe's Metrics</a>
+                            <a class="dropdown-item" href="kelly.html">Kelly's Metrics</a>
+                            <a class="dropdown-item" href="mamta.html">Mamta's Metrics</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="models.html">Models</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="predictive.html">Results</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+    <!--Our Body-->
+    <div class="container-background">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4"><br><b>Zoe's Top Songs 2018</b><br><br>
+                    <iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1Eje771Dj6R4Uy"
+                        width="300" height="600" frameborder="0" allowtransparency="true"
+                        allow="encrypted-media"></iframe>
+                </div>
+                <div class="col-sm-4"><br><b>Musical Taste Metrics</b><br><br>
+
+                    <img src="{{ url_for('static', filename='images/Energy_Zoe.png') }}" alt="energy" id="energy" width="350" height="300" ;>
+                    <img src="{{ url_for('static', filename='images/Loudness_Zoe.png') }}" alt="loudness" id="loudness" width="350" height="300" ;>
+                </div>
+                <div class="col-sm-4"><br><b></b><br><br>
+                    <img src="{{ url_for('static', filename='images/Positivity_Zoe.png') }}" alt="positivity" id="positivity" width="350"
+                        height="300" ;>
+                    <img src="{{ url_for('static', filename='images/Tempo_Zoe.png') }}" alt="tempo" id="tempo" width="350" height="300" ;>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer class="container-fluid" id="footer"></footer>
+
+    <!-- Our JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    </div>
+</body>
+
+</html>

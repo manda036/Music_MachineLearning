@@ -1,0 +1,44 @@
+/* All HTMLs */
+.container-fluid{
+    padding: 0px;
+}
+
+.container{
+    background: white;
+    fill-opacity: none;
+}
+.row{
+    padding-left: 25px;
+    padding-right: 30px;
+    padding-bottom: 25px;
+}
+
+/* index.html spotify chart */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
+  }
+
+/* workflow.html img
+#workflow{
+    height: 115%;
+    width: 115%;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+/* All HTML background img */
+
+.container-background{
+    background: url(images/Justice_in_concert.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* Models TreeDecision PNG */
+.tree{
+    overflow: scroll;
+}
