@@ -1,6 +1,4 @@
 import os
-from bson.json_util import dumps
-import json
 from flask import (
     Flask,
     render_template,
